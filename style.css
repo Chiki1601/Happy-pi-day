@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+body {
+  background: #F6CACA;
+}
+
+.box {
+  margin: auto;
+  margin-top: 10%;
+  position: relative;
+  width: 600px;
+  height: 450px;
+}
+
+#headline {
+  position: absolute;
+  left: 23%;
+  top: 47%;
+}
+#headline span {
+  color: #D4F756;
+  font-size: 1.8em;
+}
+
+h2, p {
+  font-family: "Space Mono", serif;
+  color: #FCFAED;
+}
+
+#headline p {
+  letter-spacing: 4px;
+  margin-top: -10%;
+  font-size: 0.8em;
+}
+
+.keylime {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 20%;
+  left: 15%;
+  animation: pulse 2s infinite;
+}
+
+.crust {
+  position: absolute;
+  left: 15.3%;
+  top: -17%;
+  background: #ECC26E;
+  width: 47%;
+  height: 37%;
+  z-index: 1;
+  clip-path: polygon(100% 100%, 24% 50%, 0 100%);
+  -webkit-clip-path: polygon(100% 100%, 24% 50%, 0 100%);
+}
+.crust .frosting {
+  position: absolute;
+  width: 100%;
+  height: 102%;
+  left: 4%;
+  background: #9DE27C;
+  clip-path: polygon(100% 100%, 24% 50%, 0 100%);
+  -webkit-clip-path: polygon(100% 100%, 24% 50%, 0 100%);
+}
+
+.end {
+  position: absolute;
+  left: 15.3%;
+  top: 20%;
+  width: 47%;
+  height: 22%;
+  background: #ECC26E;
+}
+
+.filling {
+  position: absolute;
+  width: 45.5%;
+  height: 20%;
+  left: 17%;
+  top: 20%;
+  border-radius: 5px 0px 0px 5px;
+  background: #FCFAED;
+}
+
+.eye-right {
+  position: absolute;
+  background: #7EC65D;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: 40%;
+  left: 30%;
+}
+
+.eye-left {
+  position: absolute;
+  background: #7EC65D;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: 40%;
+  right: 30%;
+}
+
+.pupil {
+  position: absolute;
+  background: #FCFAED;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 10%;
+  left: 50%;
+}
+
+.mouth {
+  position: absolute;
+  top: 53%;
+  left: 48%;
+  width: 10px;
+  height: 10px;
+  border: 3px solid;
+  border-radius: 50%;
+  border-color: transparent #7EC65D #7EC65D transparent;
+  transform: rotate(45deg);
+}
+
+.cream {
+  position: absolute;
+  left: 33%;
+  top: 4%;
+  transform: rotate(10deg);
+  z-index: 1;
+}
+
+.one, .two, .three, .four, .five {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #FCFAED;
+}
+
+.one {
+  left: -5px;
+}
+
+.two {
+  left: 15px;
+  top: -12px;
+}
+
+.three {
+  left: 37px;
+  top: -5px;
+}
+
+.four {
+  left: 10px;
+  top: 14px;
+}
+
+.five {
+  left: 30px;
+  top: 10px;
+}
+
+.lime {
+  background: #D4F756;
+  height: 30px;
+  width: 50px;
+  left: 31%;
+  z-index: 2;
+  border-radius: 0 0 90px 90px;
+  border-bottom: solid 5px #7EC65D;
+  border-right: solid 5px #7EC65D;
+  border-left: solid 5px #7EC65D;
+  transform: rotate(70deg);
+  position: absolute;
+}
+.lime:before {
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 47%;
+  background: #7EC65D;
+}
+.lime:after {
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 102%;
+  left: 22%;
+  top: -15%;
+  transform: rotate(45deg);
+  background: #7EC65D;
+}
+.lime .line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  right: 23%;
+  top: -15%;
+  transform: rotate(-45deg);
+  background: #7EC65D;
+  z-index: 1;
+}
+
+.bubble {
+  position: absolute;
+  left: 57%;
+  top: 7%;
+  background: #FCFAED;
+  width: 120px;
+  height: 90px;
+  border-radius: 30px;
+  animation: flash 2s 2;
+  box-shadow: 0px 0px 5px #FCFAED;
+}
+.bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #FCFAED;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -18px;
+}
+.bubble h1 {
+  color: #F6CACA;
+  font-family: "Space Mono", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1em;
+}
+.bubble p {
+  color: #9DE27C;
+  margin-top: -17px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #EA7996;
+  letter-spacing: 3px;
+  font-family: "Open Sans", sans-serif;
+}
+footer a {
+  color: #FCFAED;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #aaaaaa;
+}
